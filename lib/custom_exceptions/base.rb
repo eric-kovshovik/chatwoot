@@ -1,5 +1,4 @@
 class CustomExceptions::Base < ::StandardError
-
   def to_hash
     {
       message: message
@@ -13,5 +12,4 @@ class CustomExceptions::Base < ::StandardError
   def initialize(data)
     @data = data
   end
-
 end

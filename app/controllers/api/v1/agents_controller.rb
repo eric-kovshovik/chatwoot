@@ -48,5 +48,4 @@ class Api::V1::AgentsController < Api::BaseController
   def agents
     @agents ||= current_account.users
   end
-
 end

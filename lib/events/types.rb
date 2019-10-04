@@ -1,21 +1,21 @@
 module Events::Types
-  CONVERSATION_CREATED = 'conversation.created'
-  CONVERSATION_RESOLVED = 'conversation.resolved'
-  CONVERSATION_READ = 'conversation.read'
+  CONVERSATION_CREATED = 'conversation.created'.freeze
+  CONVERSATION_RESOLVED = 'conversation.resolved'.freeze
+  CONVERSATION_READ = 'conversation.read'.freeze
 
-  MESSAGE_CREATED = 'message.created'
-  FIRST_REPLY_CREATED = 'first.reply.created'
-  CONVERSATION_REOPENED = 'conversation.reopened'
-  CONVERSATION_LOCK_TOGGLE = 'conversation.lock_toggle'
-  ASSIGNEE_CHANGED = 'assignee.changed'
+  MESSAGE_CREATED = 'message.created'.freeze
+  FIRST_REPLY_CREATED = 'first.reply.created'.freeze
+  CONVERSATION_REOPENED = 'conversation.reopened'.freeze
+  CONVERSATION_LOCK_TOGGLE = 'conversation.lock_toggle'.freeze
+  ASSIGNEE_CHANGED = 'assignee.changed'.freeze
 
-  ACCOUNT_CREATED = 'account.created'
-  ACCOUNT_DESTROYED = 'account.destroyed'
+  ACCOUNT_CREATED = 'account.created'.freeze
+  ACCOUNT_DESTROYED = 'account.destroyed'.freeze
 
-  AGENT_ADDED = 'agent.added'
-  AGENT_REMOVED = 'agent.removed'
+  AGENT_ADDED = 'agent.added'.freeze
+  AGENT_REMOVED = 'agent.removed'.freeze
 
-  SUBSCRIPTION_CREATED = 'subscription.created'
-  SUBSCRIPTION_REACTIVATED = 'subscription.reactivated'
-  SUBSCRIPTION_DEACTIVATED = 'subscription.deactivated'
+  SUBSCRIPTION_CREATED = 'subscription.created'.freeze
+  SUBSCRIPTION_REACTIVATED = 'subscription.reactivated'.freeze
+  SUBSCRIPTION_DEACTIVATED = 'subscription.deactivated'.freeze
 end

@@ -1,5 +1,4 @@
 class Contact < ApplicationRecord
-
   validates :account_id, presence: true
   validates :inbox_id, presence: true
 
@@ -22,7 +21,7 @@ class Contact < ApplicationRecord
 
   def set_channel
     begin
-    self.chat_channel = SecureRandom.hex
+      self.chat_channel = SecureRandom.hex
     end while self.class.exists?(chat_channel: chat_channel)
   end
 end

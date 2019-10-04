@@ -65,7 +65,6 @@ group :development, :test do
   gem 'seed_dump'
   gem 'spring'
   gem 'spring-watcher-listen'
-
 end
 
 gem 'attr_extras'

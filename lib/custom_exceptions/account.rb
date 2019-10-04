@@ -1,7 +1,5 @@
 module CustomExceptions::Account
-
   class InvalidEmail < CustomExceptions::Base
-
     def message
       if @data[:disposable]
         I18n.t 'errors.signup.disposable_email'
@@ -13,13 +11,13 @@ module CustomExceptions::Account
 
   class UserExists < CustomExceptions::Base
     def message
-      I18n.t('errors.signup.email_already_exists',  email: @data[:email])
+      I18n.t('errors.signup.email_already_exists', email: @data[:email])
     end
   end
 
   class UserErrors < CustomExceptions::Base
     def message
-      @data[:errors].full_messages.join(",")
+      @data[:errors].full_messages.join(',')
     end
   end
 
@@ -28,6 +26,4 @@ module CustomExceptions::Account
       I18n.t 'errors.signup.failed'
     end
   end
-
-
 end
